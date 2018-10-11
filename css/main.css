@@ -120,7 +120,21 @@ textarea {
 /*
 ~~~~~~~~ Start Header rules ~~~~~~~~~
 */
+.logo_header {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.logo_header img {
+    width: 30%;
+    height: 100%;
+}
+
+.login {
+    background-color: red;
+}
 /*
 ~~~~~~~~ End Header Rules ~~~~~~~~~
 */
