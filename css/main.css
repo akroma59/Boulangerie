@@ -104,12 +104,35 @@ textarea {
     display:none;
 }
 
-.couleur {
-
+.icone {
+    display: flex;
+    justify-content: flex-end;
 }
+
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    width: 40%;
+}
+
+.lien {
+    display: flex;
+    flex-direction: column;
+}
+
+.couleur {
+    background-color: burlywood;
+    margin: 1em;
+}
+
+
+.Tcentre{
+    text-align: center;
 }
 
 /*
@@ -132,6 +155,7 @@ i,a {
 ul {
     list-style-type: none;
 }
+
 /*
 ~~~~~~~~ End Common Rules ~~~~~~~~~
 */
@@ -151,22 +175,21 @@ ul {
     width: 30%;
 }
 
-.login {
-    background-color: red;
-}
-
 section h1, p {
     text-align: center;
 }
 
-.mobile_article {
-    width: 100%;
-    height: 50%;
+.flex {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    width: 100%;
 }
 
-.mobile_article i, a {
+article {
+    width: 100%;
+}
+
+.article i, a {
     margin-right: 1em;
 }
 
@@ -174,18 +197,39 @@ section h1, p {
     display: none;
 }
 
-@media screen and (min-width:500px){
+.p_img {
+    display: none;
+}
 
-#none  {
-    display: block;
+.lien { 
+    display: none;
 }
 
 
-.logo_droit {
-    background-color: rebeccapurple;
-    width: 100%;
+.icone_footer { 
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+@media screen and (min-width:500px){
+
+.logo_header {
     display: flex;
     align-items: center;
+}
+
+.logo_droit {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#none  {
+    display: block;
 }
 
 .selection { 
@@ -198,6 +242,10 @@ section h1, p {
 .img_tel {
     display: none
 }
+
+.p_img {
+    display: block
+}
 .background_logo3 {
         background-image: url(../logo3.jpg);
 }
@@ -207,50 +255,55 @@ section h1, p {
 }
 
 
-.tablette_div {
-    width: 100%;
+.flex {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+}
+
+article {
+    width: 40%; 
+}
+
+.lien {
+    display: none;
+}
+
+@media screen and (min-width:1200px){
+
+    
+
+.call_action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex article {
+    width: 20%
+}
+
+.block_lien {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.lien {
     display: flex;
 }
 
-.tablette_article {
+.icone_footer { 
     display: flex;
-    flex-direction: column;
-    background-color: yellow;
-}
-
-.text_article_tab {
-    width: 80%;
+    justify-content: space-around;
     margin: auto;
 }
-
-}
-/*
-~~~~~~~~ End Header Rules ~~~~~~~~~
-*/
-
-
-
-/*
-~~~~~~~~ Start Main rules ~~~~~~~~~
-*/
-
-/*
-~~~~~~~~ End Main Rules ~~~~~~~~~
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
