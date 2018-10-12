@@ -14,6 +14,9 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <!-- FONT-->
+  <link rel="stylesheet" href="font/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -28,33 +31,41 @@
   <header>
     <section>
       <div class="logo_header">
+        <div>
         <img src="logo1.jpg" alt="logo boulangerie">
-        <form class="login">
-          Login : <br>
-          <input type="text" name="firstname">
-          <br>
-          Password :<br>
-          <input type="text" name="lastname">
-          <br>
-          <input type="submit" value="submit">
+        </div>
+        <div class="logo_droit">
+        <i class="fa fa-sign-in" aria-hidden="true"></i>              
+        <form id="none"action="index.html">
+          <input type="text">
         </form>
+        <i class="fa fa-search" id="none" aria-hidden="true"></i>
+        </div>
       </div>
+      <select class="selection">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
     </section>
-    <select>
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-    </select>
+    <nav class="nav">
+      <ul class="none">
+        <li><a href="#">Lien 1</a></li>
+        <li><a href="#">Lien 2</a></li>
+        <li><a href="#">Lien 3</a></li>
+        <li><a href="#">Lien 4</a></li>
+      </ul>
+    </nav>
+    <section class="Titre">
+      <div class="background_logo3" img src="logo3.jpg" alt="logo">
+        <h1>Bienvenue chez Emmanuelle</h1>
+        <p>Venez j'ai de la peuf</p>  
+        <p>Bienvenue chez Emmanuelle venez chercher votre pain à toute heure de la journée</p>
+      <div> 
+      <img class="img_tel" src="logo3.jpg" alt="logo">
+    </section>
   </header>
-  <nav>
-    <ul>
-      <li><a href="#">Lien 1</a></li>
-      <li><a href="#">Lien 2</a></li>
-      <li><a href="#">Lien 3</a></li>
-      <li><a href="#">Lien 4</a></li>
-    </ul>
-  </nav>
   <!--
   ~~~~~~~~~~~~ End header ~~~~~~~~~~~~~~
   -->
@@ -62,12 +73,7 @@
   ~~~~~~~~~~ Start Main ~~~~~~~~~~~~~~
   -->
   <main>
-    <section>
-      <h1></h1>
-      <p></p>
-      <img src="" alt="">
-    </section>
-    <div>
+      <div>
       <a href=""></a>
       <p></p>
       <a href=""></a>
@@ -76,38 +82,45 @@
       <p></p>
     </div>
     <div>
-      <p></p>
-      <img src="" alt="">
+      <p>Venez tous gouter mes vienoiseries</p>
+      <img src="logo7.jpeg" alt="image boulangerie">
     </div>
     <p></p>
+    <h3>Voici les vienoiseries de la semaine.</h3>
+    <div class="tablette_div">
+      <article class="tablette_article">
+        <h2></h2>
+        <div class="text_article_tab">
+          <img src="logo4.jpg" alt="croissant">
+          <p>Croissant artisanal</p>
+          <div class="mobile_article">
+            <a href="https://www.twitter.fr"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.fr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#">voir</a>
+          </div>  
+        </div>
+      </article>
+      <article class="tablette_article">
+        <h2></h2>
+        <div class="text_article_tab">
+        <img src="logo5.jpg" alt="strudel">
+        <p>Strudel artisanal</p>
+          <div class="mobile_article">
+            <a href="https://www.twitter.fr"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.fr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#">voir</a>
+          </div>
+        </div>
+      </article>
+    </div>
     <article>
       <h2></h2>
-      <img src="" alt="">
-      <p></p>
-       <div>
-        <i></i>
-        <i></i>
-        <a href="#"></a>
-       </div>
-    </article>
-    <article>
-      <h2></h2>
-      <img src="" alt="">
-      <p></p>
-       <div>
-        <i></i>
-        <i></i>
-        <a href="#"></a>
-       </div>
-    </article>
-    <article>
-      <h2></h2>
-      <img src="" alt="">
-      <p></p>
-       <div>
-        <i></i>
-        <i></i>
-        <a href="#"></a>
+      <img src="logo6.jpg" alt="torsade chocolat">
+      <p>Torsade chocolat artisanal</p>
+        <div class="mobile_article">
+         <a href="https://www.twitter.fr"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+         <a href="https://www.facebook.fr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+         <a href="#">voir</a>
        </div>
     </article>
   </main>
@@ -118,7 +131,7 @@
   ~~~~~~~~~~~~ Start Footer ~~~~~~~~~~~~~~
   -->
   <footer>
-    <div>
+    <div class="none">
       <a href="#">lien 1</a>
       <a href="#">lien 2</a>
       <a href="#">lien 3</a>
@@ -130,13 +143,13 @@
       <a href="#">lien 9</a>
     </div>
     <div>
-      <p>Crédits</p>
+      <p>Made by Vincent</p>
     </div>
     <div>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
+      <a href="https://www.twitter.fr"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://github.com/akroma59/Boulangerie"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="https://stackoverflow.com"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
     </div>
   </footer>
   <!--
