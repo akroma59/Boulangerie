@@ -107,6 +107,7 @@ textarea {
 .icone {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 0;
 }
 
 
@@ -130,6 +131,10 @@ article {
     margin: 1em;
 }
 
+
+.black {
+    color: black;
+}
 
 .Tcentre{
     text-align: center;
@@ -156,6 +161,11 @@ ul {
     list-style-type: none;
 }
 
+p, a {
+    color: beige;
+}
+
+
 /*
 ~~~~~~~~ End Common Rules ~~~~~~~~~
 */
@@ -165,6 +175,10 @@ ul {
 /*
 ~~~~~~~~ Start Header rules ~~~~~~~~~
 */
+body {
+  background-color: #004e89;  
+}
+
 .logo_header {
     display: flex;
     justify-content: space-between;
@@ -204,7 +218,6 @@ article {
 .lien { 
     display: none;
 }
-
 
 .icone_footer { 
     display: flex;
@@ -246,13 +259,10 @@ article {
 .p_img {
     display: block
 }
-.background_logo3 {
-        background-image: url(../logo3.jpg);
+.background_logo6 {
+    background-image: url(../logo6.jpg);
 }
 
-.Titre {
-    color: black;
-}
 
 
 .flex {
@@ -271,7 +281,9 @@ article {
 
 @media screen and (min-width:1200px){
 
-    
+.couleur_action {
+    color: #000
+}    
 
 .call_action {
     display: flex;
@@ -298,6 +310,7 @@ article {
 .lien {
     display: flex;
 }
+
 
 .icone_footer { 
     display: flex;
